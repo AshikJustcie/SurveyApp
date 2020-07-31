@@ -47,7 +47,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         int count = arrayList.getCount();
         String date = arrayList.getDate();
 
-        String id = "Survey No " + position;
+        String id = "Survey No " + position+1;
         holder.surveyNo.setText(id);
         holder.date.setText(date);
 

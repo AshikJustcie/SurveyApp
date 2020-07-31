@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/parentLay"
+    android:layout_margin="10dp"
     app:cardCornerRadius="4dp">
 
     <LinearLayout
@@ -12,19 +13,31 @@
         android:orientation="vertical"
         android:layout_margin="20dp">
 
+        <TextView
+            android:id="@+id/surveyNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Survey No"
+            android:textColor="@color/Semi_Sky"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp">
 
             <TextView
-                android:id="@+id/surveyNo"
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Survey No"
-                android:textColor="@color/Semi_Sky"
+                android:text="Date"
+                android:textColor="@color/black"
+
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textSize="20sp"/>
 
             <LinearLayout
                 android:id="@+id/dotContainer"
@@ -37,16 +50,6 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="25sp"/>
-
-        <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +57,7 @@
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="20sp"/>
+            android:textSize="18sp"/>
 
     </LinearLayout>
 
