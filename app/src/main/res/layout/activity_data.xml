@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="My Surveys"
+        android:gravity="center|start"
+        android:paddingStart="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/progressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="In Progress"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:padding="15dp"
+            android:background="@drawable/custom_border"/>
+
+        <TextView
+            android:id="@+id/completedView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Completed"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:padding="15dp"
+            android:background="@drawable/custom_background"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recInProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarAddress"
+        android:layout_above="@+id/addressCardV"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarAddress"
+        android:layout_above="@+id/addressCardV"/>
+
+</LinearLayout>

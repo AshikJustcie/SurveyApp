@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/q2Lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:onClick="CheckRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:onClick="CheckRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:onClick="CheckRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:onClick="CheckRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:onClick="CheckRadioButton"/>
+
+    </RadioGroup>
+
+</LinearLayout>

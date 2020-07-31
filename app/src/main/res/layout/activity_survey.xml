@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    tools:context=".SurveyActivity">
+
+    <LinearLayout
+        android:id="@+id/viewsCountLay"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <View
+            android:id="@+id/vS1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ash"
+            android:layout_marginEnd="3dp"/>
+
+        <View
+            android:id="@+id/vS2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ash"
+            android:layout_marginEnd="5dp"/>
+
+        <View
+            android:id="@+id/vS3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ash"
+            android:layout_marginEnd="5dp"/>
+
+        <View
+            android:id="@+id/vS4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ash"
+            android:layout_marginEnd="5dp"/>
+
+        <View
+            android:id="@+id/vS5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ash"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewsCountLay"
+        android:layout_above="@+id/submitBtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/surveyQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:layout_below="@+id/questionNo"/>
+
+            <include layout="@layout/question1"/>
+
+            <include layout="@layout/question2"/>
+
+            <include layout="@layout/question3"/>
+
+            <include layout="@layout/question4"/>
+
+            <include layout="@layout/question5"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/servey_button"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/afterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewsCountLay"
+        android:visibility="gone">
+
+        <include layout="@layout/survey_completed"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

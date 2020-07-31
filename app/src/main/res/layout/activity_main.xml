@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/feedback"
+        app:layout_constraintBottom_toTopOf="@+id/firstTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/firstTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp"
+        android:text="Your opinion in 3\nminutes."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/orrange"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/secondTxt"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/secondTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:padding="30dp"
+        android:text="By answering this 3 minutes survey, you help us improve our service even better for you."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/startSurveyBtn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/startSurveyBtn"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/servey_button"
+        android:text="Take the survey"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
